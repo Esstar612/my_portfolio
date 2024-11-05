@@ -10,7 +10,7 @@ import './App.css';
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/my_portfolio">  {/* Set basename here */}
             <Navbar />
             <div className="main-content">
                 <Routes>
