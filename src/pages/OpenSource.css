@@ -1,0 +1,16 @@
+.open-source {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    background-color: #1c1c1c;
+    color: #d3d3d3;
+    text-align: center;
+}
+.open-source h1{
+    font-size: 2.5rem;
+    color: #a29bfe !important;
+    margin-bottom: 40px;
+}
+
+
+

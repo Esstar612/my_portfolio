@@ -1,0 +1,126 @@
+.home {
+    background-color: #1c1c1c;
+    color: #d3d3d3;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro {
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 3.5rem;
+    color: #a29bfe;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.intro a {
+    color:#a29bfe; /* Lighter Purple */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+    color: #a29bfe; /* Keep hover consistent */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: #a29bfe;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #c299ff; /* Lighter Purple Hover */
+}
+
+.projects-preview {
+    padding: 60px 20px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.projects-preview h2 {
+    font-size: 2.5rem;
+    color: #a29bfe;
+    margin-bottom: 40px;
+}
+
+.mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px; /* Adjust the max-width as needed */
+    width: 100%;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+.mini-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.mini-card:hover {
+    transform: translateY(-5px);
+}
+
+.mini-card .year {
+    font-size: 0.9rem;
+    color: #a29bfe; /* Darker Purple */
+    margin-bottom: 10px;
+}
+
+.mini-card h3 {
+    font-size: 1.2rem;
+    color: #a29bfe;
+    margin-bottom: 10px;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.link-button {
+    padding: 6px 12px;
+    background-color: #444;
+    color: #a29bfe;
+    border: 1px solid #a29bfe;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #a29bfe;
+    color: #1c1c1c;
+}
