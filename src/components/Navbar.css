@@ -9,7 +9,7 @@
     top: 0;
     z-index: 100;
     box-sizing: border-box;
-    border-bottom: 1px solid var(--text-color); /* Light border in light mode */
+    /*border-bottom: 1px solid var(--text-color); !* Light border in light mode *!*/
 }
 
 
