@@ -7,7 +7,7 @@ const About = () => {
             <div className="about-content">
                 <h1>About Me</h1>
                 <p>
-                    Hi, I'm Star Olaojo, a driven junior Computer Science student at Rensselaer Polytechnic Institute, dual majoring in Computer Science & Information Technology and Web Sciences, with a minor in Cognitive Science. With a passion for full-stack development, I've worked on various projects ranging from web applications to open-source contributions.
+                    Hi, I'm Esther Olaojo, a driven junior Computer Science student at Rensselaer Polytechnic Institute, dual majoring in Computer Science & Information Technology and Web Sciences, with a minor in Cognitive Science. With a passion for full-stack development, I've worked on various projects ranging from web applications to open-source contributions.
                 </p>
                 <p>
                     I thrive on solving problems and building innovative solutions, and I am actively seeking opportunities to apply my skills and expand my knowledge. When I’m not coding, you can find me organizing events for the Black Student Alliance or learning about new technologies and frameworks.
