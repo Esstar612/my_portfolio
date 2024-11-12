@@ -4,7 +4,7 @@ import './Navbar.css';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 const Navbar = () => {
-    const [darkTheme, setDarkTheme] = useState(true);
+    const [darkTheme, setDarkTheme] = useState(false);
 
     const toggleTheme = () => {
         setDarkTheme(!darkTheme);
