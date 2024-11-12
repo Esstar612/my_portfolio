@@ -3,18 +3,19 @@
     margin: 0 auto;
     padding: 100px 20px;
     text-align: center;
-    background-color: #1c1c1c;
-    color: #d3d3d3;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .projects h1 {
     font-size: 2.5rem;
-    color: #a29bfe !important;
+    color: var(--highlight-color) !important;
     margin-bottom: 40px;
 }
 
 .project-card {
-    background-color: #444;
+    background-color: var(--card-background-color);
+    color: var(--text-color);
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
@@ -35,22 +36,22 @@
 
 .project-card h3 {
     font-size: 1.5rem;
-    color: #a29bfe ;
+    color: var(--highlight-color);
     margin-bottom: 10px;
 }
 
 .project-card p {
     font-size: 1.1rem;
-    color: #d3d3d3;
+    color: var(--text-color);
     line-height: 1.5;
 }
 
 .project-card strong {
-    color: #a29bfe ;
+    color: var(--highlight-color);
 }
 
 .project-card a {
-    color: #a29bfe;
+    color: var(--highlight-color);
     text-decoration: underline;
     font-weight: bold;
     transition: color 0.3s ease;

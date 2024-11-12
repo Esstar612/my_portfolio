@@ -23,27 +23,34 @@ header, .about, .projects, .contact {
 }
 
 .project-card {
-  background-color: #444;
+  background-color: var(--card-background-color);
   padding: 20px;
   margin: 10px auto;
   border-radius: 8px;
   width: 80%;
 }
-
 footer {
   background-color: #333;
   color: #d3d3d3;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
 
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Add gap between Contact text and icons */
+}
+
 footer a {
   color: #a29bfe;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1.2em; /* Adjust icon size */
+  margin: 0 5px; /* Space between icons */
 }
 
 footer a:hover {

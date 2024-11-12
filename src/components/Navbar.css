@@ -2,11 +2,13 @@
     background-color: #333;
     padding: 10px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
+    box-sizing: border-box;
 }
 
 .navbar ul {
@@ -28,3 +30,18 @@
 .navbar ul li a:hover {
     color: #a29bfe; /* Light Purple */
 }
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #a29bfe;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.theme-toggle:hover {
+    color: #c299ff;
+}
+

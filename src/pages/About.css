@@ -2,21 +2,21 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 100px 20px;
-    background-color: #1c1c1c;
-    color: #d3d3d3;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
 }
 
 .about h1 {
     font-size: 2.5rem;
-    color: #a29bfe; /* Light Purple */
+    color: var(--highlight-color); /* Use accent color */
     margin-bottom: 20px;
 }
 
 .about p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #d3d3d3;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -31,7 +31,8 @@
 }
 
 .about-card {
-    background-color: #333;
+    background-color: var(--card-background-color);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -41,11 +42,10 @@
 }
 
 .about-card h2 {
-    color: #a29bfe;
+    color: var(--highlight-color);
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
-
 .card-links {
     display: flex;
     justify-content: center;
@@ -56,9 +56,9 @@
 
 .link-button {
     padding: 6px 10px;
-    background-color: #444;
-    color: #a29bfe;
-    border: 1px solid #a29bfe;
+    background-color: var(--card-background-color);
+    color: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -66,18 +66,18 @@
 }
 
 .link-button:hover {
-    background-color: #a29bfe;
-    color: #1c1c1c;
+    background-color: var(--highlight-color);
+    color: var(--background-color);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-card a {
-    color: #a29bfe;
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: bold;
 }
 
 .about-card a:hover {
-    color: #d3d3d3;
+    color: var(--text-color);
 }

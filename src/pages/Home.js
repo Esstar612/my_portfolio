@@ -55,7 +55,7 @@ const Home = () => {
                             <p>{project.description}</p>
                             <div className="project-links">
                                 <a
-                                    href="#"
+
                                     className="link-button"
                                     onClick={(e) => {
                                         e.preventDefault();
