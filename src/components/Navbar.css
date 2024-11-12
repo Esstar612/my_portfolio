@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #333;
+    background-color: var(--navbar-background); /* Use theme variable for background */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -9,11 +9,14 @@
     top: 0;
     z-index: 100;
     box-sizing: border-box;
+    border-bottom: 1px solid var(--text-color); /* Light border in light mode */
 }
+
 
 .navbar ul {
     list-style: none;
     display: flex;
+    gap: 25px
 }
 
 .navbar ul li {
@@ -22,18 +25,22 @@
 }
 
 .navbar ul li a {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    text-decoration: none;
-    color: #d3d3d3;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    position: relative;
 }
+
+/*.navbar ul li a {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 5px;*/
+/*    text-decoration: none;*/
+/*    color: #d3d3d3;*/
+/*    font-weight: bold;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
 
 .navbar ul li a svg {
     color: var(--highlight-color);
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .navbar ul li a:hover {
@@ -44,7 +51,7 @@
     background: none;
     border: none;
     color: var(--highlight-color);
-    font-size: 1.5em;
+    font-size: 2em;
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -52,5 +59,37 @@
 
 .theme-toggle:hover {
     color: #c299ff;
+}
+
+/* Tooltip styles */
+.navbar ul li a[data-tooltip]:hover::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -30px; /* Adjust as necessary for placement */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333; /* Tooltip background color */
+    color: #fff; /* Tooltip text color */
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* Hide tooltip by default */
+.navbar ul li a[data-tooltip]::after,
+.theme-toggle[data-tooltip]::after {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.1s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.navbar ul li a:hover::after,
+.theme-toggle:hover::after {
+    opacity: 1;
 }
 

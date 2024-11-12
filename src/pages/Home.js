@@ -33,7 +33,7 @@ const Home = () => {
     return (
         <div className="home">
             <section className="intro">
-                <h1>Hey, I'm Esther</h1>
+                <h1>Hey, I'm Star</h1>
                 <p>I'm a junior Computer Science student at Rensselaer Polytechnic Institute, passionate about
                     full-stack development and open-source projects.</p>
                 <p>On this site, you can check out my <a href="#projects">projects</a>, learn more <a href="/about">about

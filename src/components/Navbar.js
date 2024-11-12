@@ -22,27 +22,31 @@ const Navbar = () => {
         <nav className="navbar">
             <ul>
                 <li>
-                    <Link to="/">
-                        <FaHome /> Home
+                    <Link to="/" data-tooltip="Home">
+                        <FaHome />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/open-source">
-                        <FaCode /> Open Source
+                    <Link to="/open-source" data-tooltip="Open Source">
+                        <FaCode />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/projects">
-                        <FaProjectDiagram /> Projects
+                    <Link to="/projects" data-tooltip="Projects">
+                        <FaProjectDiagram />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about">
-                        <FaUser /> About Me
+                    <Link to="/about" data-tooltip="About Me">
+                        <FaUser />
                     </Link>
                 </li>
             </ul>
-            <button className="theme-toggle" onClick={toggleTheme}>
+            <button
+                className="theme-toggle"
+                onClick={toggleTheme}
+                data-tooltip={darkTheme ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            >
                 {darkTheme ? <FaMoon /> : <FaSun />}
             </button>
         </nav>

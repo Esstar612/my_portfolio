@@ -5,6 +5,7 @@
   --link-color: #5b6eff;
   --card-background-color: #f0f0f0;
   --highlight-color: #5b6eff; /* Purple or blue accent color */
+  --navbar-background: #ffffff; /* Navbar background for light theme */
 }
 
 [data-theme="dark"] {
@@ -13,7 +14,8 @@
   --text-color: #d3d3d3;
   --link-color: #a29bfe;
   --card-background-color: #333;
-  --highlight-color: #a29bfe; /* Dark theme accent color */
+  --highlight-color: #a29bfe;
+  --navbar-background: #333;
 }
 
 body, html {
