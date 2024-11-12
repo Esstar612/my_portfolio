@@ -34,7 +34,7 @@
 .theme-toggle {
     background: none;
     border: none;
-    color: #a29bfe;
+    color: var(--highlight-color);
     font-size: 1.5em;
     cursor: pointer;
     position: absolute;

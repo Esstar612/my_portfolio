@@ -47,7 +47,7 @@ footer p {
 }
 
 footer a {
-  color: #a29bfe;
+  color: var(--highlight-color);
   text-decoration: none;
   font-size: 1.2em; /* Adjust icon size */
   margin: 0 5px; /* Space between icons */
