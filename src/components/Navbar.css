@@ -17,10 +17,14 @@
 }
 
 .navbar ul li {
+    display: flex;
     margin: 0 15px;
 }
 
 .navbar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
     color: #d3d3d3;
     font-weight: bold;
