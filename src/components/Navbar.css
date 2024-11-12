@@ -31,8 +31,13 @@
     transition: color 0.3s ease;
 }
 
+.navbar ul li a svg {
+    color: var(--highlight-color);
+    font-size: 1.2em;
+}
+
 .navbar ul li a:hover {
-    color: #a29bfe; /* Light Purple */
+    color: var(--highlight-color);
 }
 
 .theme-toggle {
