@@ -61,6 +61,32 @@
     color: #c299ff;
 }
 
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px; /* Reduce padding to save space */
+    }
+
+    .navbar ul {
+        flex: 1;
+        justify-content: center;
+        gap: 15px; /* Reduce gap between icons */
+    }
+
+    .navbar ul li {
+        margin: 0; /* Remove margin to save space */
+    }
+
+    .navbar ul li a svg {
+        font-size: 1.5em; /* Reduce icon size for mobile */
+    }
+
+    .theme-toggle {
+        font-size: 1.5em; /* Reduce sun/moon icon size for mobile */
+        position: static; /* Remove absolute positioning */
+        margin-left: auto; /* Move to the right of the navbar */
+    }
+}
+
 /* Tooltip styles */
 .navbar ul li a[data-tooltip]:hover::after{
     content: attr(data-tooltip);
